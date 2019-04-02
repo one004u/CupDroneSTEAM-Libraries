@@ -28,7 +28,7 @@ void loop() {
 
 void receiveHandler(uint8_t *cmd, int len)
 {
-    uint8_t checksum = jdcode.checksum(cmd);
+    uint8_t checksum = sdcode.checksum(cmd);
     if(checksum == cmd[5]){
       if(cmd[7]&0x20){
         Serial.print("GyroX : ");

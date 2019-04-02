@@ -2,7 +2,7 @@
 #include <SDCode.h>
 
 void receiveHandler(uint8_t *cmd, int len);
-JDCode sdcode(receiveHandler);
+SDCode sdcode(receiveHandler);
 
 
 void setup() {
